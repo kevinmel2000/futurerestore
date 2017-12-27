@@ -95,7 +95,7 @@ bool futurerestore::init(){
     if (!(_client->image4supported = is_image4_supported(_client))){
         info("[INFO] 32bit device detected\n");
     }else{
-        info("[INFO] 64bit device detected\n");
+        info( "מידע] נגלה מכשיר 64 ביט]");
         if (_isPwnDfu) reterror(-90, "isPwnDfu is only allowed for 32bit devices\n");
     }
     return _didInit;
